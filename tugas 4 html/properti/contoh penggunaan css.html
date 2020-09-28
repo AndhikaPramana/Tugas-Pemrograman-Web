@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contoh Penggunaan CSS</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        </head>
+    <body>
+        <div class="container">
+        <header class="header"> 
+        <div class="logo">
+        
+        </div>
+        <nav class="nav">
+
+
+	<h1>Edit Biodata</h1>
+		
+		</nav>
+		</header>
+			<div class="wrapper">
+			<aside class="sidebar">
+				<div style="padding: 10px;">
+				<b>Menu</b><br>
+				<hr>
+				<a href="#">Home</a><br />
+				<a href="#">Biodata</a><br />
+				<a href="#">Update Biodata</a><br />
+				<a href="#">Contact</a><br />
+			</div>
+			</aside>
+				<main class="content">
+				<div style="padding: 10px;">
+				<h2 style="margin: 0px;">Update Biodata </h2>
+			<hr/>
+	<form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="FormReg">
+		<table>
+			<tr>
+				<td>ID Game</td>
+				<td>:</td>
+				<td><input type="text" name="nama" value="" placeholder="Tulisakan ID Game Anda" /><br/>
+				<small style="color: red" id="err_nama"></small>
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td> <input type="password" name="password" placeholder="Tulisakan Password Anda" /><br/>
+				<small style="color: red" id="err_password"></small>
+				</td>
+			</tr>
+			<tr>
+				<td>Jenis Joki</td>
+				<td>:</td>
+				<td><input type="radio" name="jenis_joki" value="joki rank" checked /> Joki Rank
+				<input type="radio" name="jenis_joki" value="joki kda dan rank" /> Joki KDA dan Rank 
+				<input type="radio" name="jenis_joki" value="joki kda" checked /> Joki KDA
+				<br/>
+				<small style="color: red" id="err_jenis_joki"></small>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Komentar</td>
+				<td>:</td>
+				<td><textarea name="komentar" rows="5" cols="20"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" align="right"><button> simpan</button> </td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	</main>
+	</div>
+		<footer class="footer">
+			<font color="white">Copyright &#169; Pt.AA</white>
+		</footer>
+	</div>
+	</body>
+</html>
